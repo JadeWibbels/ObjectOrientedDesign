@@ -1,10 +1,16 @@
 from init_db import CreateShapesDB
-from shapes import shapes, circle, square, triangle
+from shapes import Shape
 #create database
 db = CreateShapesDB()
-#sort?
-#is this even really necessary?
+#sort by shapes
+
+
+def getKey(shape):
+    return shape.name
+
+sortedShapes = sorted(db.data, key=getKey)
+
 
 #display shapes
-for shape in db.data:
-    shape.display()
+for item in sortedShapes:
+    item.__repr__()

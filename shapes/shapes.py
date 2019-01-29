@@ -1,21 +1,18 @@
-class shapes():
-    name = None
-    index = 99
+class Shape(): #superclass
+    def __init__(self):
+        raise NotImplementedError('Do not create raw Shape objects')
 
-    def display(self):
-        print(self.name)
+    def __str__(self):
+        return self.name
 
-    def get_index(self):
-        return self.index
-
-    def set_index(self, index):
-        self.index = index
+    
 
 
-class circle(shapes):
-    name = 'circle'
+class Circle(Shape):
+    def __init__(self):
+        self.name = 'circle'
 
-    def display():
+    def __repr__(self):
         print("      o o      ")
         print("   o       o   ")
         print("  o         o  ")
@@ -23,10 +20,11 @@ class circle(shapes):
         print("   o       o   ") 
         print("      o o      ")
 
-class triangle(shapes):
-    name = 'triangle'
-
-    def display():
+class Triangle(Shape):
+    def __init__(self):
+        self.name = 'triangle'
+        
+    def __repr__(self):
         print("       ^   ")
         print("     /   \ ")
         print("    /     \ ")
@@ -34,10 +32,11 @@ class triangle(shapes):
         print("  /         \  ")
         print("  ----------- ")
 
-class square(shapes):
-    name = 'square'
+class Square(Shape):
+    def __init__(self):
+        self.name = 'square'
 
-    def display():
+    def __repr__(self):
         print("   _________")
         print("  |         |")
         print("  |         |")
