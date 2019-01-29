@@ -16,13 +16,12 @@ class circle(shapes):
     name = 'circle'
 
     def display():
-        print("   ooo    ")
-        print("  o   o   ")
-        print(" o     o  ")
-        print(" o     o  ")
-        print(" o     o  ")
-        print("  o   o   ") 
-        print("   ooo    ")
+        print("      o o      ")
+        print("   o       o   ")
+        print("  o         o  ")
+        print("  o         o  ")
+        print("   o       o   ") 
+        print("      o o      ")
 
 class triangle(shapes):
     name = 'triangle'
@@ -41,3 +40,5 @@ class square(shapes):
         print("|     |")
         print("|     |")
         print("|_____|")
+
+ 
