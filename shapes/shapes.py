@@ -27,18 +27,22 @@ class triangle(shapes):
     name = 'triangle'
 
     def display():
-        print("   ^   ")
-        print(" /   \ ")
-        print("/     \ ")
-        print("------- ")
+        print("       ^   ")
+        print("     /   \ ")
+        print("    /     \ ")
+        print("   /       \  ")
+        print("  /         \  ")
+        print("  ----------- ")
 
 class square(shapes):
     name = 'square'
 
     def display():
-        print(" _____")
-        print("|     |")
-        print("|     |")
-        print("|_____|")
+        print("   _________")
+        print("  |         |")
+        print("  |         |")
+        print("  |         |")
+        print("  |         |")
+        print("  |_________|")
 
  
