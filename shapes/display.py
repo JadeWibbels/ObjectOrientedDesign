@@ -1,5 +1,5 @@
 from init_db import CreateShapesDB
-from shapes import Shape
+import shapes
 
 
 class PrettyPrint():
@@ -9,20 +9,21 @@ class PrettyPrint():
         self.db = CreateShapesDB()
         #sort by shapes
         self.sortedShapes = sorted(self.db.data, key=self.getKey)
-
+        self.shape_counts = {'circle':0, 'square':0, 'triangle':0}
+        self.shape_objects = [shapes.Circle(), shapes.Square(), shapes.Triangle()]
 
     def getKey(self, shape):
         return shape.name
 
     def print_db_info(self):
-        print("There are ", len(self.sortedShapes), " shapes in the database.")
-        print("There are ", sum(p.name == 'circle' for p in self.sortedShapes),
-              " circles  and ", sum(p.name == 'square' for p in self.sortedShapes),
-              " squares in the database.")
-        
+        print("Database contains ", len(self.sortedShapes), " shapes.")
+        for element in self.shape_objects:
+            count = sum(p.name == element.name for p in self.sortedShapes)
+            print("There are ",count ,element.name, "objects")
+            self.shape_counts[element.name] = count
         #display shapes
-        for item in self.sortedShapes:
-            item.__repr__()
+        for item in self.shape_objects:
+            item.__repr__(self.shape_counts[item.name])
             
 #try to print out all shapes of a sort on a single line
 #so maybe like item.__repr__() * sum(p.name == 'circle' for p in self.sortedShapes) or something???
