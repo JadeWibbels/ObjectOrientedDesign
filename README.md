@@ -14,7 +14,7 @@ Erin "Jade" Wibbels and Joy Mace
 
 3) run program with "python display.py"
 
-# Instructions to Run Python (HW1)
+# Instructions to Run Python (HW2)
 1) Clone or git pull from Master
 
 2) navigate to src
