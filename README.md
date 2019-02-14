@@ -17,6 +17,18 @@ Erin "Jade" Wibbels and Joy Mace
 # Instructions to Run Java (HW2)
 1) Clone or git pull from Master
 
-2) navigate to src
+2) ObjectOrientedDesign/HW2/out/production/HW2 
 
-3) run program with 
+3) run program with java com.company.Main
+
+4) If you have any problems running this program it may be due to jdk/jre version.
+
+Check your java version with: java -version
+
+This assignment was completed with:
+
+java version "1.8.0_201"
+
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
