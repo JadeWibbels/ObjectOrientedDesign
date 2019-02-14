@@ -11,6 +11,7 @@ public class ShapeDatabase {
 
     public ShapeDatabase()
     {
+        // sets list to length 7 and calls method to fill collection
         length = 7;
         shapeCollection = generate_collection(length);
     }
@@ -20,12 +21,11 @@ public class ShapeDatabase {
         Random random = new Random();
         //creates empty list
         List shapeCollection = new ArrayList();
-
+        // fills list
         for(int i = 0; i< length; i++)
         {
             int next_shape = random.nextInt(3);
             //switch statement
-            System.out.println(next_shape);
             switch(next_shape)
             {
                 //case statements
