@@ -2,7 +2,10 @@
 This is the repository for:
 
 CSCI 4448 HW 1 Question 4
+
 CSCI 4448 HW 2 Question 4
+
+CSCI 4448 HW 3 Hardware Store
 
 # Group Members
 Erin "Jade" Wibbels and Joy Mace
