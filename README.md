@@ -37,7 +37,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
 Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 # Instruction to run Hardware Store (HW3)
-# NOTE HW 3 completed with Will Harris and Adam Austin 
+<h4> NOTE HW 3 group members:Erin "Jade" Wibbels, Joy Mace, Will Harris and Adam Austin </h4>
 
 1) Clone or git pull from Master
 
